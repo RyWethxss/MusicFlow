@@ -1,0 +1,21 @@
+/* WETHWORKS identity system 1.0. Keep this file and fonts/ together. */
+@font-face{font-family:Manrope;src:url('./fonts/Manrope-Variable.ttf') format('truetype');font-weight:200 800;font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url('./fonts/IBMPlexMono-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+:root{
+ --ww-paper:#f4f1e9;--ww-surface:#fffdf7;--ww-ink:#17221d;--ww-muted:#5b685d;--ww-line:#cdd3c5;
+ --ww-accent:#c44723;--ww-accent-ink:#a93a1c;--ww-accent-hover:#a5381b;--ww-accent-soft:#f8e3d5;
+ --ww-sage:#b7c8a1;--ww-success:#43613b;--ww-stage:#29382e;--ww-stage-deep:#17251e;--ww-on-stage:#edf1e3;
+ --ww-prediction:#80aeb7;--ww-warning:#8a5d19;--ww-error:#a33028;--ww-focus:#236a87;
+ --ww-font:'Manrope','Segoe UI',sans-serif;--ww-mono:'IBM Plex Mono',Consolas,monospace;
+ --ww-text-xs:11px;--ww-text-sm:13px;--ww-text-md:15px;--ww-text-lg:19px;--ww-title:clamp(36px,5vw,72px);
+ --ww-space-1:4px;--ww-space-2:8px;--ww-space-3:12px;--ww-space-4:16px;--ww-space-5:24px;--ww-space-6:32px;--ww-space-7:48px;--ww-space-8:64px;
+ --ww-radius-sm:4px;--ww-radius:8px;--ww-radius-lg:12px;--ww-stroke:1px;--ww-shadow:0 8px 28px #17221d0b;
+ --ww-motion:160ms;--ww-ease:cubic-bezier(.2,.65,.25,1);--ww-control-height:42px;--ww-rail-width:256px;
+}
+.ww-button{font:650 13px var(--ww-font);min-height:var(--ww-control-height);padding:10px 18px;border:1px solid var(--ww-line);border-radius:var(--ww-radius-sm);background:var(--ww-surface);color:var(--ww-ink);cursor:pointer}
+.ww-button-primary{background:var(--ww-accent);border-color:var(--ww-accent);color:var(--ww-surface)}
+.ww-button-primary:hover{background:var(--ww-accent-hover)}
+.ww-eyebrow{font:11px var(--ww-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ww-muted)}
+.ww-panel{border:1px solid var(--ww-line);border-radius:var(--ww-radius);background:var(--ww-surface)}
+.ww-focus:focus-visible,.ww-button:focus-visible{outline:3px solid var(--ww-focus);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){:root{--ww-motion:0ms}}

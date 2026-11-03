@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ww_ink">#17221D</color>
+    <color name="ww_paper">#F4F1E9</color>
+    <color name="ww_surface">#FFFDF7</color>
+    <color name="ww_muted">#5B685D</color>
+    <color name="ww_accent">#C44723</color>
+    <color name="ww_sage">#B7C8A1</color>
+    <color name="ww_stage">#29382E</color>
+    <color name="ww_stage_deep">#17251E</color>
+</resources>
