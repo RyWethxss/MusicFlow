@@ -16,11 +16,9 @@ jobs:
           echo "ANDROID_HOME=$ANDROID_HOME"
           test -d "$ANDROID_HOME/platforms/android-35" || "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-35"
       - uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: '8.9'
       - name: Build debug APK
-        run: gradle :app:assembleDebug --no-daemon
+        run: ./gradlew :app:assembleDebug --no-daemon
       - uses: actions/upload-artifact@v4
         with:
-          name: MusicFlow-debug-apk
+          name: MusicFlow-v1.0.0-preview-apk
           path: app/build/outputs/apk/debug/*.apk

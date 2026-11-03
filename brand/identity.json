@@ -1,0 +1,21 @@
+{
+  "name": "WETHWORKS",
+  "tagline": "Built to be understood.",
+  "version": "1.0",
+  "firstProduct": "Parking Lab",
+  "fonts": {
+    "ui": "Manrope",
+    "telemetry": "IBM Plex Mono"
+  },
+  "canonicalRules": "BRAND.md",
+  "tokens": "tokens.css",
+  "palette": {
+    "paper": "#F4F1E9",
+    "surface": "#FFFDF7",
+    "ink": "#17221D",
+    "accent": "#C44723",
+    "accentText": "#A93A1C",
+    "sage": "#B7C8A1",
+    "prediction": "#80AEB7"
+  }
+}
